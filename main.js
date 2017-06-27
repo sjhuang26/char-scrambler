@@ -25,7 +25,7 @@
   
   function onClickMainInputToggle() {
     mainInputShown = !mainInputShown;
-    
+    updateMainInputShown();
   }
   
   function updateMainInputShown() {

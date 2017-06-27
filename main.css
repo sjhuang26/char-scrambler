@@ -28,11 +28,15 @@ button:hover {
   margin: 0 0 10px 0;
   width: 100%;
   font-weight: bold;
+  float: none;
 }
 
 h1, h2 {
   margin: 0 0 10px 0;
   padding: 0;
+}
+
+h2.h2--left {
   float: left;
 }
 

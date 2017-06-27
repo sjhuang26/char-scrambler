@@ -1,5 +1,7 @@
 textarea {
   box-sizing: border-box;
+  margin: 0 0 10px 0;
+  padding: 2px;
   width: 100%;
   border: 1px solid black;
   outline: none;

@@ -26,7 +26,7 @@
   function onHideInputClick() {
     mainInputShown = !mainInputShown;
     $("mainInput").style.display = mainInputShown ? "block" : "none";
-    $("mainInputToggle").style.textContent = mainInputShown ? "Hide" : "Show";
+    $("mainInputToggle").textContent = mainInputShown ? "Hide" : "Show";
   }
   
   $("scramble").addEventListener("click", onScrambleClick);

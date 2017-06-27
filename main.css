@@ -4,9 +4,14 @@ textarea {
   padding: 2px;
   width: 100%;
   border: 1px solid #EEE;
+  transition: border 0.5s;
   outline: none;
   resize: vertical;
   height: 100px;
+}
+
+textarea:focus {
+  border: 1px solid #AAA;
 }
 
 button {

@@ -17,17 +17,24 @@
       return a.join("");
   }
   
-  function onScrambleClick() {
+  function onClickScramble() {
     $("mainOutput").value = scrambleString($("mainInput").value);
   }
   
   var mainInputShown = true;
   
-  function onHideInputClick() {
+  function onClickMainInputToggle() {
     mainInputShown = !mainInputShown;
+    
+  }
+  
+  function updateMainInputShown() {
     $("mainInput").style.display = mainInputShown ? "block" : "none";
     $("mainInputToggle").textContent = mainInputShown ? "Hide" : "Show";
   }
   
-  $("scramble").addEventListener("click", onScrambleClick);
+  $("scramble").addEventListener("click", onClickScramble);
+  $("mainInputToggle").addEventListener("click", onClickMainInputToggle);
+  
+  updateMainInputShown();
 })();

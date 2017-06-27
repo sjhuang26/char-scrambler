@@ -4,3 +4,12 @@ textarea {
   border: 1px solid black;
   outline: none;
 }
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 200%;
+  border: none;
+  outline: none;
+  background: #EEE;
+}

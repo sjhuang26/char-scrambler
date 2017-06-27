@@ -5,7 +5,7 @@
   
   // https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript
   function scrambleString(str) {
-      var a = str.split(""),
+      var a = str.replace(/[\n\r]/g, '').split(""),
           n = a.length;
 
       for(var i = n - 1; i > 0; i--) {
@@ -17,9 +17,24 @@
       return a.join("");
   }
   
-  function onScrambleClick() {
+  function onClickScramble() {
     $("mainOutput").value = scrambleString($("mainInput").value);
   }
   
-  $("scramble").addEventListener("click", onScrambleClick);
+  var mainInputShown = true;
+  
+  function onClickMainInputToggle() {
+    mainInputShown = !mainInputShown;
+    updateMainInputShown();
+  }
+  
+  function updateMainInputShown() {
+    $("mainInput").style.display = mainInputShown ? "block" : "none";
+    $("mainInputToggle").textContent = mainInputShown ? "Hide" : "Show";
+  }
+  
+  $("scramble").addEventListener("click", onClickScramble);
+  $("mainInputToggle").addEventListener("click", onClickMainInputToggle);
+  
+  updateMainInputShown();
 })();

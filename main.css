@@ -16,23 +16,33 @@ textarea:focus {
 
 button {
   margin: 0 0 10px 0;
-  padding: 5px 0;
-  width: 100%;
-  font-weight: bold;
+  padding: 5px 2px;
   font-size: 100%;
   border: none;
   outline: none;
   background: #EEE;
   transition: background 1s;
+  float: right;
 }
 
 button:hover {
   background: #AAA;
 }
 
+.button--big {
+  margin: 0 0 10px 0;
+  width: 100%;
+  font-weight: bold;
+  float: none;
+}
+
 h1, h2 {
   margin: 0 0 10px 0;
   padding: 0;
+}
+
+h2.h2--left {
+  float: left;
 }
 
 body {

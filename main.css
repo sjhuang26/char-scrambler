@@ -6,6 +6,7 @@ textarea {
   border: 1px solid #EEE;
   outline: none;
   resize: vertical;
+  height: 40%;
 }
 
 button {

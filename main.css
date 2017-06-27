@@ -17,6 +17,7 @@ button {
   border: none;
   outline: none;
   background: #EEE;
+  transition: background 1s;
 }
 
 button:hover {

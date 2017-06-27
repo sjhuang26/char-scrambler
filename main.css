@@ -3,8 +3,9 @@ textarea {
   margin: 0 0 10px 0;
   padding: 2px;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #EEE;
   outline: none;
+  resize: vertical;
 }
 
 button {

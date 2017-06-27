@@ -1,6 +1,6 @@
 (function() {
   function $(id) {
-    return document.getElementByID(id);
+    return document.getElementById(id);
   }
   
   // https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript

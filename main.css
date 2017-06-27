@@ -10,7 +10,7 @@ textarea {
 }
 
 button {
-  margin: 0 10px 10px 0;
+  margin: 0 0 10px 0;
   padding: 5px 2px;
   font-size: 100%;
   border: none;
@@ -33,6 +33,7 @@ button:hover {
 h1, h2 {
   margin: 0 0 10px 0;
   padding: 0;
+  float: left;
 }
 
 body {

@@ -8,8 +8,12 @@ textarea {
 button {
   margin: 10px;
   padding: 10px;
-  font-size: 200%;
+  font-size: 100%;
   border: none;
   outline: none;
   background: #EEE;
+}
+
+body {
+  font-face: Arial, Helvetica, sans-serif;
 }
